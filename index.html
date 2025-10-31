@@ -3,163 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="New Weve SMM — курс по SMM: 9 уроків, безкоштовні статті. Акція: знижка до 7 листопада! Доступ у @priluchnaaa.">
-  <title>New Weve SMM — Акція до 7 листопада!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="New Wave SMM — жіночий курс по SMM: 8 модулів, знижка 20% до 1 грудня. Доступ з 1 грудня.">
+  <title>New Wave SMM — Акція до 1 грудня!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: url('https://i.pinimg.com/1200x/63/83/ff/6383ffdc3e77fc3e8a44763a85543e8c.jpg') center/cover fixed;
-      color:#fff; line-height:1.7; text-align:center; padding:15px;
+      background: url('https://i.pinimg.com/1200x/f3/43/85/f34385a100f7597397df12dcaf2793f9.jpg') center/cover fixed;
+      color:#fff; line-height:1.8; text-align:center; padding:20px;
       min-height:100vh; position:relative; overflow-x:hidden;
     }
     .overlay {
       position:absolute; top:0; left:0; width:100%; height:100%;
-      background:rgba(50, 20, 40, 0.55); z-index:1;
+      background:linear-gradient(135deg, rgba(255,182,193,0.32), rgba(255,105,180,0.25)); z-index:1;
     }
     .container { max-width:1000px; margin:auto; position:relative; z-index:2; }
 
-    header { padding:70px 15px 50px; }
-    h1 { font-size:2.9rem; font-weight:800; margin-bottom:12px; text-shadow:0 3px 10px rgba(0,0,0,.5); letter-spacing:-0.5px; color:#FFD1DC; }
-    h2 { font-size:1.85rem; margin:55px 0 28px; font-weight:700; position:relative; color:#FFB6C1; }
-    h2::after { content:''; width:55px; height:4px; background:#FF8FAB; margin:12px auto; display:block; border-radius:2px; }
+    header { padding:80px 20px 60px; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size:3.4rem; font-weight:700; margin-bottom:14px;
+      text-shadow:0 4px 12px rgba(0,0,0,.3); letter-spacing:-1px; color:#FFE4E9;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size:2.1rem; margin:60px 0 30px; font-weight:700; position:relative; color:#FFC1D3;
+    }
+    h2::after {
+      content:''; width:70px; height:3px; background:#FFB6C1; margin:14px auto; display:block; border-radius:2px;
+    }
 
-    /* ТАЙМЕР — КОМПАКТНИЙ */
+    /* ТАЙМЕР — КОМПАКТНИЙ, М'ЯКИЙ, НЕ ОБРІЗАЄТЬСЯ */
     .timer-box {
-      background:linear-gradient(135deg, rgba(255, 182, 193, 0.25), rgba(255, 105, 180, 0.2));
-      border:2px solid rgba(255, 105, 180, 0.35);
-      border-radius:18px; padding:16px 10px; max-width:100%; margin:25px 10px;
-      backdrop-filter:blur(14px); box-shadow:0 10px 28px rgba(0,0,0,.28);
-      position:relative; overflow:hidden;
+      background:linear-gradient(135deg, rgba(255,182,193,0.28), rgba(255,105,180,0.22));
+      border:1px solid rgba(255,182,193,0.4); border-radius:20px; padding:16px 12px;
+      max-width:100%; margin:28px 12px; backdrop-filter:blur(12px);
+      box-shadow:0 8px 25px rgba(0,0,0,.25); position:relative; overflow:hidden;
     }
     .timer-title {
-      font-size:1.18rem; font-weight:700; color:#FF8FAB; margin-bottom:8px;
-      text-shadow:0 1px 4px rgba(0,0,0,.3); letter-spacing:0.3px;
+      font-family: 'Playfair Display', serif;
+      font-size:1.25rem; font-weight:700; color:#FFB6C1; margin-bottom:10px;
+      text-shadow:0 1px 4px rgba(0,0,0,.3); letter-spacing:0.4px;
     }
     .timer {
-      display:flex; justify-content:center; gap:6px; font-size:1.3rem; font-weight:800;
-      flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px;
+      display:flex; justify-content:center; gap:8px; font-size:1.4rem; font-weight:800;
+      flex-wrap:nowrap; overflow-x:auto; padding-bottom:2px;
     }
     .time-block {
-      background:rgba(0,0,0,0.55); padding:8px 10px; border-radius:12px;
-      min-width:46px; border:1px solid rgba(255, 105, 180, 0.3);
-      box-shadow:0 4px 12px rgba(0,0,0,.35); white-space:nowrap;
+      background:rgba(255,255,255,0.12); padding:10px 12px; border-radius:16px;
+      min-width:52px; border:1px solid rgba(255,182,193,0.3);
+      box-shadow:0 4px 12px rgba(0,0,0,.3); backdrop-filter:blur(6px);
     }
-    .time-block span:first-child { display:block; font-size:1.45rem; color:#FFD1DC; }
-    .label { display:block; font-size:.65rem; margin-top:1px; opacity:.9; font-weight:600; color:#FFB6C1; }
+    .time-block span:first-child { display:block; font-size:1.6rem; color:#FFE4E9; }
+    .label { display:block; font-size:.7rem; margin-top:2px; opacity:.9; font-weight:600; color:#FFC1D3; }
 
     .btn {
-      display:inline-block; background:linear-gradient(45deg,#FF8FAB,#FF69B4); color:#fff;
-      padding:17px 38px; border-radius:40px; font-weight:700; text-decoration:none;
-      margin:16px 8px; font-size:1.25rem; box-shadow:0 8px 20px rgba(255, 105, 180,.5);
+      display:inline-block; background:linear-gradient(45deg,#FFB6C1,#FF8FAB); color:#fff;
+      padding:18px 42px; border-radius:50px; font-weight:700; text-decoration:none;
+      margin:18px 10px; font-size:1.3rem; box-shadow:0 10px 25px rgba(255,182,193,.45);
       transition:all .3s; position:relative; overflow:hidden;
       animation:pulse 2s infinite;
     }
     @keyframes pulse {
-      0% { transform:scale(1); box-shadow:0 8px 20px rgba(255, 105, 180,.5); }
-      50% { transform:scale(1.05); box-shadow:0 12px 28px rgba(255, 105, 180,.7); }
-      100% { transform:scale(1); box-shadow:0 8px 20px rgba(255, 105, 180,.5); }
+      0% { transform:scale(1); box-shadow:0 10px 25px rgba(255,182,193,.45); }
+      50% { transform:scale(1.06); box-shadow:0 14px 32px rgba(255,182,193,.65); }
+      100% { transform:scale(1); box-shadow:0 10px 25px rgba(255,182,193,.45); }
     }
-    .btn:hover { animation:none; transform:scale(1.08); box-shadow:0 14px 32px rgba(255, 105, 180,.7); }
+    .btn:hover { animation:none; transform:scale(1.1); box-shadow:0 16px 36px rgba(255,182,193,.7); }
 
     /* Анімація при скролі */
     .animate-on-scroll {
-      opacity:0; transform:translateY(30px); transition:all .8s ease-out;
+      opacity:0; transform:translateY(35px); transition:all .9s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .animate-on-scroll.visible {
       opacity:1; transform:translateY(0);
     }
 
-    /* Про автора — з більшим фото */
+    /* Опис курсу */
+    .course-desc {
+      background:rgba(255,255,255,.18); border-radius:24px; padding:30px; margin:55px auto; max-width:740px;
+      backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.25);
+    }
+    .course-desc p { font-size:1.15rem; margin-bottom:16px; }
+
+    /* Про автора */
     .author {
-      background:rgba(255,255,255,.16); border-radius:20px; padding:32px; margin:50px auto; max-width:720px;
-      backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.22);
-      display:flex; flex-direction:column; align-items:center; gap:20px;
+      background:rgba(255,255,255,.18); border-radius:24px; padding:35px; margin:55px auto; max-width:740px;
+      backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.25);
+      display:flex; flex-direction:column; align-items:center; gap:22px;
     }
     .author-img {
-      width:200px; height:200px; border-radius:50%; object-fit:cover;
-      border:6px solid rgba(255, 105, 180, 0.5); box-shadow:0 10px 30px rgba(0,0,0,.4);
+      width:220px; height:220px; border-radius:50%; object-fit:cover;
+      border:7px solid rgba(255,182,193,0.55); box-shadow:0 12px 35px rgba(0,0,0,.45);
     }
-    .author h3 { font-size:1.45rem; margin:0; color:#FFD1DC; }
-    .author p { font-size:1.02rem; margin:0; max-width:600px; }
+    .author h3 {
+      font-family: 'Playfair Display', serif;
+      font-size:1.55rem; margin:0; color:#FFE4E9;
+    }
+    .author p { font-size:1.05rem; margin:0; max-width:620px; }
 
     /* Тарифи */
     .tariffs {
-      display:flex; flex-wrap:wrap; justify-content:center; gap:18px; margin:50px 0;
+      display:flex; flex-wrap:wrap; justify-content:center; gap:22px; margin:60px 0;
     }
     .tariff {
-      background:rgba(255,255,255,.16); border-radius:20px; padding:22px; width:300px;
-      backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,.22); transition:all .35s;
+      background:rgba(255,255,255,.18); border-radius:24px; padding:26px; width:310px;
+      backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.25); transition:all .35s;
       position:relative;
     }
-    .tariff:hover { transform:translateY(-6px); box-shadow:0 14px 30px rgba(0,0,0,.25); }
-    .tariff h3 { font-size:1.3rem; margin-bottom:10px; color:#FFD1DC; }
-    .tariff .price { font-size:2.2rem; margin:15px 0; color:#FF8FAB; }
-    .tariff .old-price { font-size:1.5rem; text-decoration:line-through; opacity:.7; color:#FFB6C1; margin-left:8px; }
-    .tariff ul { text-align:left; margin:15px 0; font-size:0.95rem; }
-    .tariff li { margin:8px 0; }
-    .tariff .btn { margin-top:18px; font-size:1.1rem; padding:14px 28px; }
+    .tariff:hover { transform:translateY(-8px); box-shadow:0 16px 35px rgba(0,0,0,.3); }
+    .tariff h3 {
+      font-family: 'Playfair Display', serif;
+      font-size:1.35rem; margin-bottom:12px; color:#FFE4E9;
+    }
+    .tariff .price { font-size:2.4rem; margin:16px 0; color:#FFB6C1; }
+    .tariff .old-price { font-size:1.6rem; text-decoration:line-through; opacity:.75; color:#FFC1D3; margin-left:10px; }
+    .tariff ul { text-align:left; margin:16px 0; font-size:0.98rem; }
+    .tariff li { margin:9px 0; }
+    .tariff .btn { margin-top:20px; font-size:1.15rem; padding:15px 30px; }
+
+    /* Модулі — розкриваються */
+    .modules {
+      margin:70px 0;
+    }
+    .module {
+      background:rgba(255,255,255,.18); border-radius:24px; padding:26px; margin:18px auto; max-width:740px;
+      text-align:left; backdrop-filter:blur(14px); border:1px solid rgba(255,255,255,.25);
+      cursor:pointer; transition:all .35s;
+    }
+    .module:hover { transform:translateY(-7px); box-shadow:0 16px 35px rgba(0,0,0,.3); }
+    .module-header {
+      display:flex; justify-content:space-between; align-items:center; font-size:1.35rem; font-weight:700; color:#FFE4E9;
+    }
+    .module-header i { transition:transform .3s; }
+    .module.open .module-header i { transform:rotate(180deg); }
+    .module-desc { margin:16px 0; font-size:1.05rem; }
+    .module-content { max-height:0; overflow:hidden; transition:max-height .6s ease; }
+    .module.open .module-content { max-height:1200px; padding-top:18px; }
+    .module-content ul { margin-left:22px; }
+    .module-content li { margin:7px 0; font-size:0.98rem; }
 
     .lesson, .article, .review {
-      background:rgba(255,255,255,.16); border-radius:20px; padding:22px;
-      margin:16px auto; max-width:720px; text-align:left; backdrop-filter:blur(12px);
-      border:1px solid rgba(255,255,255,.22); transition:all .35s;
+      background:rgba(255,255,255,.18); border-radius:24px; padding:26px;
+      margin:18px auto; max-width:740px; text-align:left; backdrop-filter:blur(14px);
+      border:1px solid rgba(255,255,255,.25); transition:all .35s;
       position:relative; overflow:hidden;
     }
     .lesson::before, .article::before, .review::before {
-      content:''; position:absolute; top:0; left:0; width:100%; height:3px;
-      background:linear-gradient(90deg, #FF8FAB, #FF69B4); opacity:0;
+      content:''; position:absolute; top:0; left:0; width:100%; height:4px;
+      background:linear-gradient(90deg, #FFB6C1, #FF8FAB); opacity:0;
       transition:opacity .3s;
     }
     .lesson:hover::before, .article:hover::before, .review:hover::before { opacity:1; }
     .lesson:hover, .article:hover, .review:hover {
-      transform:translateY(-6px); box-shadow:0 14px 30px rgba(0,0,0,.25);
+      transform:translateY(-7px); box-shadow:0 16px 35px rgba(0,0,0,.3);
     }
-    .lesson h3, .article h3 { font-size:1.28rem; margin-bottom:11px; font-weight:700; color:#FFD1DC; }
-    .free-link { color:#FFB6C1; text-decoration:underline; font-weight:600; }
+    .lesson h3, .article h3 { font-size:1.32rem; margin-bottom:12px; font-weight:700; color:#FFE4E9; }
+    .free-link { color:#FFC1D3; text-decoration:underline; font-weight:600; }
 
-    .review { font-style:italic; border-left:5px solid #FF8FAB; }
-    .review::before { content:'“'; font-size:5.5rem; font-weight:900; position:absolute; top:-18px; left:25px; color:rgba(255, 105, 180, 0.2); }
-    .review-author { font-weight:700; margin-top:12px; font-style:normal; color:#FF8FAB; }
+    .review { font-style:italic; border-left:6px solid #FFB6C1; }
+    .review::before { content:'“'; font-size:6rem; font-weight:900; position:absolute; top:-20px; left:28px; color:rgba(255,182,193,0.25); }
+    .review-author { font-weight:700; margin-top:14px; font-style:normal; color:#FFB6C1; }
 
-    footer { margin-top:90px; font-size:.88rem; opacity:.85; padding:22px; }
+    footer { margin-top:100px; font-size:.9rem; opacity:.9; padding:25px; }
 
     /* Кнопка "Вгору" */
     .scroll-top {
-      position:fixed; bottom:22px; right:22px; z-index:1000;
-      background:linear-gradient(45deg,#FF8FAB,#FF69B4); color:#fff; width:55px; height:55px;
+      position:fixed; bottom:25px; right:25px; z-index:1000;
+      background:linear-gradient(45deg,#FFB6C1,#FF8FAB); color:#fff; width:60px; height:60px;
       border-radius:50%; display:flex; align-items:center; justify-content:center;
-      font-size:1.6rem; box-shadow:0 6px 18px rgba(255, 105, 180,.5);
+      font-size:1.8rem; box-shadow:0 8px 22px rgba(255,182,193,.55);
       opacity:0; visibility:hidden; transition:all .3s;
-      cursor:pointer; border:2px solid rgba(255,255,255,.3);
+      cursor:pointer; border:3px solid rgba(255,255,255,.35);
     }
     .scroll-top.show { opacity:1; visibility:visible; }
 
     /* Мобільна оптимізація */
     @media (max-width:768px) {
-      body { font-size:0.94rem; }
-      h1 { font-size:2.35rem; }
-      .timer { font-size:1.15rem; gap:5px; }
-      .time-block { padding:7px 8px; min-width:42px; }
-      .time-block span:first-child { font-size:1.25rem; }
-      .label { font-size:0.6rem; }
-      .btn { padding:14px 30px; font-size:1.1rem; }
-      .lesson, .article, .review { padding:17px; margin:12px auto; }
-      h2 { font-size:1.6rem; }
-      .tariff { width:100%; max-width:320px; }
-      .author-img { width:150px; height:150px; }
-      .scroll-top { width:48px; height:48px; font-size:1.35rem; bottom:18px; right:18px; }
+      body { font-size:0.96rem; }
+      h1 { font-size:2.5rem; }
+      .timer { font-size:1.1rem; gap:6px; }
+      .time-block { padding:8px 10px; min-width:46px; }
+      .time-block span:first-child { font-size:1.3rem; }
+      .label { font-size:0.62rem; }
+      .btn { padding:15px 32px; font-size:1.15rem; }
+      .lesson, .article, .review { padding:20px; margin:14px auto; }
+      h2 { font-size:1.7rem; }
+      .tariff { width:100%; max-width:340px; }
+      .author-img { width:160px; height:160px; }
+      .scroll-top { width:52px; height:52px; font-size:1.5rem; bottom:20px; right:20px; }
     }
     @media (max-width:480px) {
-      h1 { font-size:2.05rem; }
-      .timer { font-size:1rem; gap:4px; }
-      .time-block { padding:6px 7px; min-width:38px; }
+      h1 { font-size:2.15rem; }
+      .timer { font-size:0.95rem; gap:4px; }
+      .time-block { padding:6px 8px; min-width:40px; }
       .time-block span:first-child { font-size:1.1rem; }
-      .btn { padding:12px 24px; font-size:1rem; }
+      .btn { padding:13px 26px; font-size:1.05rem; }
       .timer-title { font-size:1.05rem; }
-      .author-img { width:130px; height:130px; }
+      .author-img { width:140px; height:140px; }
     }
   </style>
 </head>
@@ -169,14 +212,35 @@
 
   <div class="container">
 
-    <!-- Заголовок + ТАЙМЕР -->
+    <!-- Заголовок -->
     <header class="animate-on-scroll">
-      <h1>New Weve SMM</h1>
-      <p>Курс по SMM: від 250€ за проект</p>
-      <p><strong>9 уроків • безкоштовні статті • підтримка в @priluchnaaa</strong></p>
+      <h1>New Wave SMM</h1>
+      <p>Курс по SMM: від 400€ за проект</p>
+    </header>
 
+    <!-- Опис курсу -->
+    <section class="course-desc animate-on-scroll">
+      <p>SMM для бізнесу та особистого бренду</p>
+      <p>Цей 8-тижневий онлайн-курс з SMM перетворить ваші соцмережі на машину для залучення клієнтів. Від стратегії та контент-плану до таргетованої реклами й аналітики — ви отримаєте покроковий план дій, реальні кейси та персональний фідбек. Ідеально для бізнесу, блогерів та маркетологів.</p>
+      <p>Після курсу ти не тільки отримаєш 400€ за проект, але й:</p>
+      <p>• Навички створення стратегії під будь-яку нішу</p>
+      <p>• Шаблони, які працюють без доопрацювань</p>
+      <p>• Портфоліо з реальними кейсами</p>
+      <p>• Впевненість у собі як SMM-спеціалістки</p>
+      <p>• Доступ до спільноти однодумців</p>
+    </section>
+
+    <!-- Про автора -->
+    <section class="author animate-on-scroll">
+      <img src="https://i.imgur.com/nLdth9t.jpeg" alt="Юлія Прилучна" class="author-img">
+      <h3>Юлія Прилучна</h3>
+      <p>Я — SMM-спеціалістка з 3-річним досвідом. Веду проєкти в Україні, країнах СНД та США. Працюю з різними нішами — від локальних бізнесів до міжнародних брендів. У курсі ділюся реальним досвідом, перевіреними шаблонами та кейсами, які допомогли моїм клієнтам вийти на стабільний дохід через соцмережі.</p>
+    </section>
+
+    <!-- ТАЙМЕР — КОМПАКТНИЙ, М'ЯКИЙ -->
+    <section class="animate-on-scroll">
       <div class="timer-box">
-        <div class="timer-title">Акція: знижка до 7 листопада!</div>
+        <div class="timer-title">Знижка 20% за передреєстрацію до 1 грудня!</div>
         <div class="timer" id="countdown">
           <div class="time-block"><span id="days">7</span><span class="label">днів</span></div>
           <div class="time-block"><span id="hours">00</span><span class="label">год</span></div>
@@ -188,19 +252,6 @@
       <a href="#tariffs" class="btn scroll-to-tariffs">
         Обрати тариф — акція діє!
       </a>
-    </header>
-
-    <!-- Про курс -->
-    <section class="animate-on-scroll">
-      <h2>Про курс</h2>
-      <p>Курс для тих, хто хоче заробляти на SMM. Практика, кейси, шаблони. Після оплати — миттєвий доступ у закритий канал з уроками, завданнями та підтримкою.</p>
-    </section>
-
-    <!-- Про автора — з великим фото -->
-    <section class="author animate-on-scroll">
-      <img src="https://i.imgur.com/nLdth9t.jpeg" alt="Priluchnaaa" class="author-img">
-      <h3>Про автора — Priluchnaaa</h3>
-      <p>Я — SMM-спеціаліст з 3-річним досвідом. Веду проєкти в Україні, країнах СНД та США. Допомогла 50+ клієнтам вийти на стабільний дохід. У курсі — мій реальний досвід, шаблони та кейси.</p>
     </section>
 
     <!-- Тарифи -->
@@ -210,11 +261,11 @@
         <!-- Самостійний -->
         <div class="tariff">
           <h3>Самостійний</h3>
-          <div class="price">99 € <span class="old-price">150 €</span></div>
+          <div class="price">96 € <span class="old-price">120 €</span></div>
           <ul>
-            <li>Усі 9 уроків + матеріали</li>
+            <li>Усі 8 модулів + матеріали</li>
             <li>Доступ назавжди</li>
-            <li>1 созвон для питань</li>
+            <li>1 созвон за курс</li>
             <li>Без перевірки ДЗ</li>
           </ul>
           <a href="https://t.me/priluchnaaa" class="btn" target="_blank">Обрати</a>
@@ -223,12 +274,13 @@
         <!-- З куратором -->
         <div class="tariff">
           <h3>З куратором</h3>
-          <div class="price">250 € <span class="old-price">450 €</span></div>
+          <div class="price">256 € <span class="old-price">320 €</span></div>
           <ul>
-            <li>Усі 9 уроків + матеріали</li>
+            <li>Усі 8 модулів + матеріали</li>
+            <li>Доступ назавжди</li>
             <li>Перевірка ДЗ</li>
             <li>3 созвони за курс</li>
-            <li>Зворотний зв’язок</li>
+            <li>Підтримка куратора</li>
           </ul>
           <a href="https://t.me/priluchnaaa" class="btn" target="_blank">Обрати</a>
         </div>
@@ -236,30 +288,206 @@
         <!-- VIP -->
         <div class="tariff">
           <h3>VIP — зі мною</h3>
-          <div class="price">499 € <span class="old-price">900 €</span></div>
+          <div class="price">496 € <span class="old-price">620 €</span></div>
           <ul>
-            <li>Усі 9 уроків + матеріали</li>
+            <li>Усі 8 модулів + матеріали</li>
+            <li>Доступ назавжди</li>
             <li>Перевірка ДЗ</li>
             <li>4 созвони</li>
-            <li>Перший клієнт від мене</li>
+            <li>Спілкування зі мною напряму</li>
+            <li>Бонус: Перший клієнт від мене</li>
           </ul>
           <a href="https://t.me/priluchnaaa" class="btn" target="_blank">Обрати</a>
         </div>
       </div>
     </section>
 
-    <!-- Уроки -->
-    <section class="animate-on-scroll">
-      <h2>9 уроків курсу</h2>
-      <div class="lesson"><h3>1. Алгоритми</h3><p>Як працюють Instagram, TikTok, YouTube. Що постити, щоб не злити охоплення.</p></div>
-      <div class="lesson"><h3>2. SMM без бюджету: 15 безкоштовних інструментів</h3><p>Canva, CapCut, Notion — ростемо без копійки.</p></div>
-      <div class="lesson"><h3>3. Контент-план на 90 днів за 2 години</h3><p>Шаблон + автоматизація. Ніколи не буде "що постити?"</p></div>
-      <div class="lesson"><h3>4. Крос-постинг без банів</h3><p>Пости в 3 соцмережі одночасно — без ризиків.</p></div>
-      <div class="lesson"><h3>5. SMM для локального бізнесу</h3><p>Кав’ярня, салон, магазин — +200 клієнтів за місяць.</p></div>
-      <div class="lesson"><h3>6. Reels vs Shorts vs TikTok</h3><p>Де залипати аудиторія — і як монетизувати.</p></div>
-      <div class="lesson"><h3>7. Чат-боти в Telegram</h3><p>Автовідповіді, ліди, продажі — без рутини.</p></div>
-      <div class="lesson"><h3>8. SMM-фріланс</h3><p>Де шукати клієнтів, як брати передоплату.</p></div>
-      <div class="lesson"><h3>9. Міжнародний ринок</h3><p>Ведення акаунтів англійською, іспанською.</p></div>
+    <!-- Модулі — розкриваються -->
+    <section class="modules animate-on-scroll">
+      <h2>8 модулів курсу</h2>
+
+      <!-- Модуль 1 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#1 Персональний старт</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Готова зануритися в SMM без страху «з чого почати»?
+          
+          Цей модуль — твій м’який старт у професію.
+          
+          Розберемо, чим насправді займається SMM-ник у 2025, скільки можна заробляти та як не вигоріти вже на першому тижні.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Закулісся SMM: що робить спеціаліст</li>
+            <li>Зарплата SMM-менеджера</li>
+            <li>Книжки, кіно + натхнення</li>
+            <li>Як організувати час креативнику</li>
+            <li>Як уникнути вигорання на початку</li>
+            <li>Визначаємо точку А та Б</li>
+            <li>SMM-терміни: короткий словник</li>
+            <li>Корисні додатки</li>
+            <li>Домашнє завдання</li>
+            <li>Я себе люблю</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 2 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#2 Контент-план</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Хочеш контент-план, який працює 90 днів без тебе?
+          
+          Тут — повна структура SMM-стратегії: від KPI до УТП.
+          
+          Розберемо, як ставити цілі, будувати воронки та писати перше повідомлення клієнту. Результат: Готовий шаблон стратегії + розуміння, куди рухатись. Завдання: Склади УТП + 3 KPI для свого проєкту.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Як виглядає SMM-стратегія</li>
+            <li>KPI: що вимірюємо?</li>
+            <li>Цілі SMM: які бувають</li>
+            <li>Джерела трафіку + воронки</li>
+            <li>Позиціонування в стратегії</li>
+            <li>УТП: твоя унікальність</li>
+            <li>Перша розмова з клієнтом</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 3 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#3 Stories Magic</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Stories — твій щоденний контакт з аудиторією.
+          
+          Навчимось робити рубрики, ToV, айдентику та брендбук.
+          
+          Покажу, як за 5 хвилин знімати Stories, які піднімають залучення на 50%. Результат: Готовий рубрикатор + ToV для твого бренду. Завдання: Створи 7 рубрик + 3 Stories з інтерактивом.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Типи контенту в Stories</li>
+            <li>Рубрики: як не заплутатись</li>
+            <li>Візуал: як бути впізнаваним</li>
+            <li>ToV: голос бренду</li>
+            <li>Айдентика: кольори + асоціації</li>
+            <li>Брендбук за 1 годину</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 4 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#4 SMM-Стратегія</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Як перейти від «хочу клієнтів» до «маю 3 проєкти»?
+          
+          Розберемо ніші, резюме, КП, особистий бренд + лекція від психолога.
+          
+          Результат: Готовий профіль фрілансера + 1 КП. Завдання: Онови резюме + напиши КП.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Топ-ніші для SMM у 2026</li>
+            <li>Де знайти першого клієнта</li>
+            <li>Резюме, що продає тебе</li>
+            <li>КП: шаблон, що закриває</li>
+            <li>Особистий бренд: твоя фішка</li>
+            <li>Психологія продажів (гостьова)</li>
+            <li>Жінка в SMM: баланс і сила</li>
+            <li>Б’юті-ніша: секрети росту</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 5 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#5 Контент-Стратегія</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Знати ЦА — значить продавати.
+          
+          Створимо портрет клієнта, проаналізуємо конкурентів, навчимося працювати з UGC.
+          
+          Результат: Глибоке розуміння аудиторії + чек-лист анпакінгу. Завдання: Збери 3 психотипи ЦА + 1 UGC-приклад.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Інфостиль: 4 кити</li>
+            <li>Заголовки, що чіпляють</li>
+            <li>Тексти, які читають до кінця</li>
+            <li>Історії: рецепт залучення</li>
+            <li>Ідеї: коли мозок порожній</li>
+            <li>ToV: пиши як твій бренд</li>
+            <li>Психотипи ЦА: хто твої люди?</li>
+            <li>Портрет клієнта: цифри + емоції</li>
+            <li>Конкуренти: що в них взяти</li>
+            <li>UGC: як залучати клієнтів</li>
+            <li>Анпакінг: передстартові дії</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 6 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#6 Креатив Pict</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Контент без дизайнера? Легко.
+          
+          Навчимось знімати на телефон, робити Stories у Canva, аналізувати статистику та не робити помилок у рекламі.
+          
+          Результат: 10 готових шаблонів + навички мобільної зйомки. Завдання: Зніми Reels + зроби 3 Stories.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Stories: дизайн за 3 хвилини</li>
+            <li>Знімай як профі на телефон</li>
+            <li>Просування: платне vs безкоштовне</li>
+            <li>Аналітика: розбираємо статистику</li>
+            <li>Рекламні макети: що НЕ робити</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Модуль 7 -->
+      <div class="module">
+        <div class="module-header" onclick="toggleModule(this)">
+          <span>#7 SMM USA</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="module-desc">
+          Хочеш працювати з клієнтами з США?
+          
+          Розберемо культурні особливості, комунікацію, пошук клієнтів + реальні кейси.
+          
+          Результат: Шаблон листа до американського клієнта. Завдання: Напиши pitch для клієнта з США.
+        </div>
+        <div class="module-content">
+          <ul>
+            <li>Ринок США: що треба знати</li>
+            <li>Як спілкуватись з американцями</li>
+            <li>Де шукати клієнтів у США</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- Статті -->
@@ -282,17 +510,17 @@
 
     <!-- Відгуки -->
     <section class="animate-on-scroll">
-      <h2>Відгуки учнів</h2>
+      <h2>Відгуки учениць</h2>
       <div class="review">
         <p>"За місяць після уроку про контент-план — охоплення зросли в 4 рази. Дякую!"</p>
         <p class="review-author">— Анна</p>
       </div>
       <div class="review">
-        <p>"Після курсу отримав від автора першого клієнта. За 3 місяці вийшов на дохід 800€/міс. Дуже радий!"</p>
-        <p class="review-author">— Максим</p>
+        <p>"Після курсу отримала від автора першого клієнта. За 3 місяці вийшла на дохід 800€/міс. Дуже рада!"</p>
+        <p class="review-author">— Олена</p>
       </div>
       <div class="review">
-        <p>"Чат-боти в Telegram — це магія. Автоматизував продажі."</p>
+        <p>"Чат-боти в Telegram — це магія. Автоматизувала продажі."</p>
         <p class="review-author">— Катя</p>
       </div>
       <p><a href="https://t.me/priluchnaaa" class="free-link" target="_blank">Більше відгуків — у @priluchnaaa</a></p>
@@ -300,15 +528,15 @@
 
     <!-- Призив -->
     <section class="animate-on-scroll">
-      <h2>Готовий стартувати?</h2>
-      <p>Доступ одразу • Підтримка 24/7</p>
+      <h2>Готова стартувати?</h2>
+      <p>Курс доступний з 1 грудня • Акція до 1 грудня</p>
       <a href="#tariffs" class="btn scroll-to-tariffs">
         Обрати тариф — акція діє!
       </a>
     </section>
 
     <footer>
-      <p>© 2025 New Weve SMM. Оплата та доступ — через <a href="https://t.me/priluchnaaa" style="color:#FF8FAB;">@priluchnaaa</a></p>
+      <p>© 2025 New Wave SMM. Оплата та доступ — через <a href="https://t.me/priluchnaaa" style="color:#FFB6C1;">@priluchnaaa</a></p>
     </footer>
   </div>
 
@@ -319,8 +547,8 @@
 
   <!-- JavaScript -->
   <script>
-    // Таймер
-    const countDownDate = new Date("Nov 7, 2025 23:59:59").getTime();
+    // Таймер до 1 грудня 2025
+    const countDownDate = new Date("Dec 1, 2025 00:00:00").getTime();
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
@@ -337,7 +565,7 @@
 
       if (distance < 0) {
         clearInterval(timer);
-        document.getElementById("countdown").innerHTML = '<div style="color:#FF1744;font-weight:800;">АКЦІЯ ЗАКІНЧЕНА</div>';
+        document.getElementById("countdown").innerHTML = '<div style="color:#FFB6C1;font-weight:800;">АКЦІЯ ЗАКІНЧЕНА</div>';
       }
     }, 1000);
 
@@ -352,6 +580,12 @@
     }, { threshold: 0.15 });
 
     elements.forEach(el => observer.observe(el));
+
+    // Розкриття модулів
+    function toggleModule(header) {
+      const module = header.parentElement;
+      module.classList.toggle('open');
+    }
 
     // Плавний скрол до тарифів
     document.querySelectorAll('.scroll-to-tariffs').forEach(btn => {
